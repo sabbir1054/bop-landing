@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FlipWords } from "../ui/flip-words";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 const words = "";
 const Hero = () => {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
+  const words = `BOP BD is Bangladesh's online wholesale marketplace. When the world has become digital based on online, why should we Bangladesh lag behind in business and trade, so we are working through BOP BD to introduce Bangladesh to business and trade in the whole world. We are on the BOP BD path to bring all the businesses and trades of Bangladesh on one platform and enable traders to source all products easily and at low prices.`;
   const flipWords = ["BOP BD", " B2B Platform "];
 
   return (
@@ -27,11 +27,21 @@ const Hero = () => {
           height={50}
           className="shadow-lg"
         />
-        <h1 className="text-5xl font-medium">
+        <h1 className="text-6xl font-bold">
           Welcome to <FlipWords words={flipWords} />{" "}
         </h1>{" "}
         <div className=" md:w-3/5 w-full">
           <TextGenerateEffect words={words} />
+        </div>
+        <div className="flex">
+          <Link href={"/"}>
+            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                Download App
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
