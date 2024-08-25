@@ -14,6 +14,13 @@
     "features": {
       "title": "Our offering",
       "description": "Discover a comprehensive suite of solutions tailored for businesses. From bulk purchasing to streamlined logistics, we provide the tools and services to help your business thrive."
+    },
+    "who": {
+      "title": "Are You Ready to Elevate Your Business?",
+      "description": "Identify your role in the B2B landscape and unlock tailored strategies to grow your business, from manufacturing to distribution"
+    },
+    "downApp": {
+      "title": "Get Our App Now!"
     }
   },
 

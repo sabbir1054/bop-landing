@@ -27,7 +27,7 @@ const Features = () => {
           {t("title")}
         </h2>
         <div className="mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
-          <p className={`text-center ${locale === "bn" && "bn-font"}`}>
+          <p className={`text-center ${locale === "bn" && "bn-font"} text-lg`}>
             {t("description")}
           </p>
         </div>
