@@ -23,3 +23,13 @@ h6 {
 .features-card:hover {
   border-radius: 15px !important;
 }
+.footer-bn-font {
+  font-size: 18px;
+  font-family: "Kalpurush", sans-serif !important;
+}
+.footer-bn-font ul,
+.footer-bn-font li,
+.footer-bn-font a {
+  font-size: 16px;
+  font-family: "Kalpurush", sans-serif !important;
+}

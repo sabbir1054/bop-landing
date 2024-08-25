@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import { NavigationBar } from "@/components/Navigationbar/NavigationBar";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -17,6 +18,7 @@ const CommonLayout = async ({ children }) => {
         <NextIntlClientProvider messages={messages}>
           <NavigationBar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
