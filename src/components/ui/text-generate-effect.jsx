@@ -27,7 +27,6 @@ export const TextGenerateEffect = ({
       }
     );
   }, [scope.current]);
-  /* ${locale === "bn" && "bn-font"} */
   const renderWords = () => {
     return (
       <motion.div ref={scope}>

@@ -1,10 +1,11 @@
 "use client";
+import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FlipWords } from "../ui/flip-words";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-
+import LanguageSelector from "./LanguageSelector";
 const Hero = () => {
   const locale = useLocale();
 
@@ -22,7 +23,14 @@ const Hero = () => {
         loop
         muted
       ></video>
-
+      <motion.div
+        className="absolute top-4 right-4 z-20"
+        initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
+        animate={{ opacity: 1, x: 0 }} // Slide in and fade in
+        transition={{ duration: 0.5, ease: "easeOut" }} // Smooth transition
+      >
+        <LanguageSelector />
+      </motion.div>
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">

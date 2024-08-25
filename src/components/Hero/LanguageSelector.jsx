@@ -1,33 +1,42 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 
 export default function LanguageSelector() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
-  const localActive = useLocale();
-  
+  const locale = useLocale();
 
-  const onSelectChange = (e) => {
-    const nextLocale = e.target.value;
+  const nextLocale = locale === "bn" ? "en" : "bn";
+
+  const handleClick = () => {
     startTransition(() => {
       router.replace(`/${nextLocale}`);
     });
   };
+
+  const flagSrc = locale === "bn" ? "/assets/en.png" : "/assets/bn.png";
+  const altText = locale === "bn" ? "English flag" : "Bangladesh flag";
+
   return (
-    <label className="border-2 rounded">
-      <p className="sr-only">change language</p>
-      <select
-        defaultValue={localActive}
-        className="bg-transparent py-2"
-        onChange={onSelectChange}
-        disabled={isPending}
-      >
-        <option value="en">English</option>
-        <option value="bn">BD</option>
-      </select>
-    </label>
+    <motion.div
+      className="border-2 border-transparent rounded-full overflow-hidden bg-black bg-opacity-50 p-2 cursor-pointer"
+      onClick={handleClick}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ duration: 0.2 }}
+    >
+      <Image
+        src={flagSrc}
+        width={40}
+        height={40}
+        alt={altText}
+        className="rounded-full"
+      />
+    </motion.div>
   );
 }
