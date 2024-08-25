@@ -23,6 +23,30 @@ export const enFeatures = [
       "Enjoy curated benefits like exclusive discounts, enhanced protection, and dedicated support to help your business thrive at every stage.",
     icon: "/assets/featureIcons/user-check.png",
   },
+  {
+    title: "Full Store Management",
+    description:
+      "Manage your entire store, from inventory to customer orders, all from a single platform designed for efficiency and ease.",
+    icon: "/assets/featureIcons/building-warehouse.png",
+  },
+  {
+    title: "Exclusive Sales Offers",
+    description:
+      "Take advantage of various promotional offers to boost your sales, with custom deals tailored specifically for your business.",
+    icon: "/assets/featureIcons/rosette-discount.png",
+  },
+  {
+    title: "Seamless Delivery Service",
+    description:
+      "Deliver your products to customers using our integrated delivery service, ensuring timely and secure shipments.",
+    icon: "/assets/featureIcons/tir.png",
+  },
+  {
+    title: "Custom Payment Options",
+    description:
+      "Add and manage your preferred payment methods, offering flexibility and convenience for you and your customers.",
+    icon: "/assets/featureIcons/credit-card-pay.png",
+  },
 ];
 
 export const bnFeatures = [
@@ -49,5 +73,29 @@ export const bnFeatures = [
     description:
       "আপনার ব্যবসার প্রতিটি ধাপে উন্নতির জন্য এক্সক্লুসিভ ছাড়, বর্ধিত সুরক্ষা এবং বিশেষ সহায়তার মতো বিশেষ সুবিধা উপভোগ করুন।",
     icon: "/assets/featureIcons/user-check.png",
+  },
+  {
+    title: "সম্পূর্ণ স্টোর পরিচালনা",
+    description:
+      "একটি প্ল্যাটফর্ম থেকে আপনার সম্পূর্ণ স্টোর পরিচালনা করুন, ইনভেন্টরি থেকে শুরু করে কাস্টমার অর্ডার পর্যন্ত সবকিছু দক্ষতার সাথে এবং সহজে।",
+    icon: "/assets/featureIcons/building-warehouse.png",
+  },
+  {
+    title: "বিশেষ বিক্রয় অফার",
+    description:
+      "বিভিন্ন প্রমোশনাল অফার গ্রহণ করুন যা আপনার ব্যবসার জন্য বিশেষভাবে তৈরি করা কাস্টম ডিল দিয়ে আপনার বিক্রয় বাড়াতে সহায়ক।",
+    icon: "/assets/featureIcons/rosette-discount.png",
+  },
+  {
+    title: "নিরবচ্ছিন্ন ডেলিভারি সার্ভিস",
+    description:
+      "আমাদের ইন্টিগ্রেটেড ডেলিভারি সার্ভিস ব্যবহার করে আপনার পণ্যগুলি গ্রাহকদের কাছে পৌঁছে দিন, যা সময়মত এবং নিরাপদে শিপমেন্ট নিশ্চিত করে।",
+    icon: "/assets/featureIcons/tir.png",
+  },
+  {
+    title: "কাস্টম পেমেন্ট অপশন",
+    description:
+      "আপনার পছন্দসই পেমেন্ট পদ্ধতি যোগ করুন এবং পরিচালনা করুন, যা আপনাকে এবং আপনার গ্রাহকদের জন্য নমনীয়তা এবং সুবিধা প্রদান করে।",
+    icon: "/assets/featureIcons/credit-card-pay.png",
   },
 ];

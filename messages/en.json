@@ -10,8 +10,13 @@
       "title": "Welcome to",
       "aniMatedTitle": "Bop Bd, B2B Platform",
       "description": "BOP BD is Bangladesh's online wholesale marketplace. When the world has become digital based on online, why should we Bangladesh lag behind in business and trade, so we are working through BOP BD to introduce Bangladesh to business and trade in the whole world. We are on the BOP BD path to bring all the businesses and trades of Bangladesh on one platform and enable traders to source all products easily and at low prices."
+    },
+    "features": {
+      "title": "Our offering",
+      "description": "Discover a comprehensive suite of solutions tailored for businesses. From bulk purchasing to streamlined logistics, we provide the tools and services to help your business thrive."
     }
   },
+
   "footer": {
     "col1": {
       "l1": "Company",
@@ -29,7 +34,7 @@
       "l1": "Legal",
       "l2": "Privacy Policy",
       "l3": "Licensing",
-      "l4": "Terms &amp; Conditions"
+      "l4": "Terms & Conditions"
     },
     "col4": {
       "l1": "Download ",

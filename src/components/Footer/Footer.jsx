@@ -21,7 +21,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l2")}
                 </Link>
@@ -29,7 +29,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l3")}
                 </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l4")}
                 </Link>
@@ -56,7 +56,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l2")}
                 </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l3")}
                 </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l4")}
                 </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l2")}
                 </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l3")}
                 </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l4")}
                 </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col4.l2")}
                 </Link>
@@ -134,7 +134,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col4.l3")}
                 </Link>
@@ -142,7 +142,7 @@ export default function Footer() {
               <li className="mb-4">
                 <Link
                   href="#"
-                  className={`hover:unserline ${locale === "bn" && "bn-font"}`}
+                  className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col4.l4")}
                 </Link>
