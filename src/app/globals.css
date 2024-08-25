@@ -20,3 +20,6 @@ h6 {
 .bn-font {
   font-family: "Kalpurush", sans-serif !important;
 }
+.features-card:hover {
+  border-radius: 15px !important;
+}
