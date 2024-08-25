@@ -2,6 +2,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, stagger, useAnimate } from "framer-motion";
+import { useLocale } from "next-intl";
 import { useEffect } from "react";
 
 export const TextGenerateEffect = ({
@@ -10,6 +11,7 @@ export const TextGenerateEffect = ({
   filter = true,
   duration = 0.3,
 }) => {
+  const locale = useLocale();
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
@@ -25,7 +27,7 @@ export const TextGenerateEffect = ({
       }
     );
   }, [scope.current]);
-
+  /* ${locale === "bn" && "bn-font"} */
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
@@ -33,7 +35,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="text-white  opacity-0 font-light text-base md:text-xl"
+              className={`text-white  opacity-0 font-light text-base md:text-xl ${
+                locale === "bn" && "bn-font"
+              }`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

@@ -1,24 +1,33 @@
-"use client"
-import Image from "next/image";
+"use client";
+
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import { useTransition } from "react";
 
-const LanguageSelector = () => {
+export default function LanguageSelector() {
+  const [isPending, startTransition] = useTransition();
   const router = useRouter();
-  const supportedLanguages = ["en", "bn"];
-  const handleLanguageChange = (language) => {
-    router.push(router.pathname, null, { locale: language });
+  const localActive = useLocale();
+  
+
+  const onSelectChange = (e) => {
+    const nextLocale = e.target.value;
+    startTransition(() => {
+      router.replace(`/${nextLocale}`);
+    });
   };
-
   return (
-    <div>
-      {supportedLanguages.map((language) => (
-        <button key={language} onClick={() => handleLanguageChange(language)}>
-          {/* Render your flag icon here */}
-          <Image src={`/assets/${language}.png`} alt={language} width={30} height={10} />
-        </button>
-      ))}
-    </div>
+    <label className="border-2 rounded">
+      <p className="sr-only">change language</p>
+      <select
+        defaultValue={localActive}
+        className="bg-transparent py-2"
+        onChange={onSelectChange}
+        disabled={isPending}
+      >
+        <option value="en">English</option>
+        <option value="bn">BD</option>
+      </select>
+    </label>
   );
-};
-
-export default LanguageSelector;
+}

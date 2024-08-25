@@ -1,11 +1,17 @@
+"use client";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { FlipWords } from "../ui/flip-words";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-const words = "";
+
 const Hero = () => {
-  const words = `BOP BD is Bangladesh's online wholesale marketplace. When the world has become digital based on online, why should we Bangladesh lag behind in business and trade, so we are working through BOP BD to introduce Bangladesh to business and trade in the whole world. We are on the BOP BD path to bring all the businesses and trades of Bangladesh on one platform and enable traders to source all products easily and at low prices.`;
-  const flipWords = ["BOP BD", " B2B Platform "];
+  const locale = useLocale();
+
+  const t = useTranslations("home.hero");
+
+  const words = t("description");
+  const flipWords = t("aniMatedTitle").split(",");
 
   return (
     <div className="relative h-screen overflow-hidden">
@@ -27,8 +33,13 @@ const Hero = () => {
           height={50}
           className="shadow-lg"
         />
-        <h1 className="text-6xl font-bold">
-          Welcome to <FlipWords words={flipWords} />{" "}
+        <h1 className={`text-6xl font-bold ${locale === "bn" && "bn-font"}`}>
+          {t("title")}
+          {locale === "bn" ? (
+            <span className={`text-pink-600 bn-font ml-3`}>বপ বিডি-তে</span>
+          ) : (
+            <FlipWords words={flipWords} />
+          )}
         </h1>{" "}
         <div className=" md:w-3/5 w-full">
           <TextGenerateEffect words={words} />
