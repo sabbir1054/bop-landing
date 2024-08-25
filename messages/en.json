@@ -1,4 +1,10 @@
 {
+  "navigation": {
+    "nav1": "Home",
+    "nav2": "About",
+    "nav3": "Contact",
+    "downBtn": "Download App"
+  },
   "home": {
     "hero": {
       "title": "Welcome to",
