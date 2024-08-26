@@ -30,10 +30,16 @@
       "title": " Frequently Asked Questions"
     }
   },
-  "about":{
-    "head":{
-      "title":"About us",
-      "description":"Discover who we are and what drives us. Our team is passionate about delivering exceptional service and innovative solutions tailored to your needs."
+  "about": {
+    "head": {
+      "title": "About us",
+      "description": "Discover who we are and what drives us. Our team is passionate about delivering exceptional service and innovative solutions tailored to your needs."
+    },
+    "sec1": {
+      "p1": " Here we 🌟",
+      "p2": "BOP BD is Bangladesh's premier online wholesale marketplace. 🌐 As the world moves towards digital transformation, we aim to ensure Bangladesh is at the forefront of business and trade. Through BOP BD, we're introducing Bangladesh to global commerce and uniting all businesses and trades on a single platform. 🛒",
+      "p3": "  Our platform empowers traders to source products effortlessly and at competitive prices. 💰 With BOP BD, buying and selling products online is simple and efficient. Our goal is to connect domestic products with customers worldwide through our mobile apps and website. 🌍📱",
+      "p4": " Operating 24/7, our apps function tirelessly to market products and serve businesses, similar to a dedicated sales representative. 📈 Whether it's day or night, BOP BD is here to support your business needs and help you thrive in the global market. 🚀"
     }
   },
 
