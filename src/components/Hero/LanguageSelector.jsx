@@ -3,19 +3,21 @@
 import { motion } from "framer-motion";
 import { useLocale } from "next-intl";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useTransition } from "react";
 
 export default function LanguageSelector() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const locale = useLocale();
+  const pathname = usePathname();
+  const urlPath = pathname.split(`/${locale}`)[1];
 
   const nextLocale = locale === "bn" ? "en" : "bn";
 
   const handleClick = () => {
     startTransition(() => {
-      router.replace(`/${nextLocale}`);
+      router.replace(`/${nextLocale + urlPath}`);
     });
   };
 
