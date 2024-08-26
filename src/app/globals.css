@@ -88,12 +88,16 @@ h6 {
   color: #ec4899; /* Replace with your desired hover color */
 }
 
-
 .mySwiper .swiper-pagination-bullet {
-  background-color: #64748b; 
+  background-color: #64748b;
   opacity: 1;
 }
 
 .mySwiper .swiper-pagination-bullet-active {
   background-color: #ec4899;
+}
+
+.about-sec2 {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }

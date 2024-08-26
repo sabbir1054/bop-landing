@@ -49,9 +49,9 @@ const AboutPage = () => {
         </motion.div>
       </div>
       {/* about */}
-      <div className="grid grid-cols-1 md:grid-cols-2  py-2">
-        <div className="flex flex-col justify-center">
-          <section className="py-8 px-4 bg-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-2  ">
+        <div className="flex flex-col justify-center bg-gray-100">
+          <section className=" px-4 about-sec2">
             <div className="container mx-auto max-w-4xl">
               <motion.h2
                 className={`text-3xl font-bold text-center text-blue-600 mb-6 ${
@@ -96,7 +96,7 @@ const AboutPage = () => {
             </div>
           </section>
         </div>
-        <div className="flex items-center justify-center bg-pink-100 pt-4 pb-4 md:pt-0 md:pb-0">
+        <div className="flex items-center about-sec2 justify-center bg-pink-100 ">
           <motion.div
             initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
             animate={{ opacity: 1, x: 0 }} // Slide in and fade in
