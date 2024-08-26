@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { faqDataBn, faqDataEn } from "../../../data/faqData";
 
 const FAQItem = ({ question, answer }) => {
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -22,7 +23,7 @@ const FAQItem = ({ question, answer }) => {
         <h5
           className={`font-normal ${
             isOpen ? "text-indigo-600 font-medium" : ""
-          }`}
+          } ${locale === "bn" && "bn-font"}`}
         >
           {question}
         </h5>
@@ -45,7 +46,11 @@ const FAQItem = ({ question, answer }) => {
       </button>
       {isOpen && (
         <div className="mt-4">
-          <p className="text-base text-gray-900 font-normal leading-6">
+          <p
+            className={`text-base text-gray-900 font-normal leading-6 ${
+              locale === "bn" && "bn-font"
+            }`}
+          >
             {answer}
           </p>
         </div>
@@ -79,8 +84,8 @@ const FAQSection = () => {
           </h2>
         </div>
         <div className="accordion-group">
-          {faqs?.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+          {data?.map((faq, index) => (
+            <FAQItem key={index} question={faq.qs} answer={faq.ans} />
           ))}
         </div>
       </div>

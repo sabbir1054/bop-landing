@@ -28,3 +28,34 @@ export const faqDataBn = [
     ans: "বপ বিডিকে চুক্তি মোতাবেক তার পাওনা পরিষদ না করলে স্বয়ংক্রভাবে অ্যাকাউন্ট বাতিল, পেন্ডিং হবে। বাংলাদেশ আইন অনুযায়ী মামলা করার অধিকার রাখে।  তাই চুক্তি মোতাবেক উভয়পক্ষ এগ্রিমেন্ট স্বয়ংক্রভাবে প্রতিটা  একাউন্টে হয়ে যায়। যা সর্ব আদালতে গ্রহণযোগ্য।",
   },
 ];
+
+export const faqDataEn = [
+  {
+    qs: "What is Bop BD? How does it work?",
+    ans: "Bop BD is an online wholesale marketplace. Through this marketplace, you can easily buy and sell all kinds of products and manage all product sourcing. Bop BD allows buyers and sellers to create an account via mobile Android apps, upload their products on the app, and set the MRP (Manufacturer's Retail Price) and trade price to collect payments from buyers. Buyers can see the prices of the same product from various sellers and choose the best option according to their needs. They can purchase products from local sellers or from sellers across the country. Here, wholesale traders, importers, company dealers, and direct manufacturers are available for purchase.",
+  },
+  {
+    qs: "Who can create an account on Bop BD?",
+    ans: "Since Bop BD is a wholesale marketplace, only businesses can create accounts by providing the necessary documents and engage in transactions. They can select their business category according to the guidelines and operate their business 24/7.",
+  },
+  {
+    qs: "What is required to create an account on Bop BD?",
+    ans: "To create an account, a valid mobile number is needed to receive OTP (One Time Password) and to communicate with customers. You must provide your location accurately on Google Maps so that buyers and sellers can identify the location for delivery. Additional documents such as an NID card, NID number, trade license, bank account details, and mobile banking number may also be required. You should also upload a profile picture of the owner or the company logo.",
+  },
+  {
+    qs: "How does Bop BD charge commission? What percentage of commission does it take?",
+    ans: "Bop BD collects commissions from sellers through its own payment gateway. There is no charge for creating an account. However, after a product is sold, Bop BD will collect the commission as per the agreement with the seller. The commission percentage will be determined according to the contract made at the time of the sale.",
+  },
+  {
+    qs: "Does Bop BD handle deliveries?",
+    ans: "Initially, Bop BD does not provide delivery services. Sellers and buyers need to coordinate directly to handle the exchange of goods. Currently, Bop BD operates only as a marketplace and a major platform for product sourcing. However, Bop BD plans to introduce its own delivery system soon under the name Bop Express.",
+  },
+  {
+    qs: "What is the payment system on Bop BD?",
+    ans: "Payments between buyers and sellers are managed independently. Transactions should be conducted through the bank details and mobile banking information provided in the Bop BD account profile. Bop BD ensures approval and authorization for these transactions. Bop BD's commission is automatically added to the seller's account for each sale. Sellers are obligated to pay Bop BD according to the agreed terms. If payments are not made, orders may not be processed, and accounts could be suspended or pending. If Bop BD's dues are not cleared, the account will remain closed until payment is settled.",
+  },
+  {
+    qs: "What happens if the commission is not paid to Bop BD?",
+    ans: "If the commission due to Bop BD is not paid according to the agreement, the account will be automatically canceled or placed on hold. According to Bangladeshi law, Bop BD has the right to file a lawsuit. Therefore, an agreement is automatically established in each account, which is legally binding and enforceable in court.",
+  },
+];
