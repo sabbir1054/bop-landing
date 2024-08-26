@@ -1,6 +1,7 @@
 "use client";
 import { DownApp } from "@/components/DownApp/DownApp";
 import Features from "@/components/Features/Features";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import WhoUR from "@/components/WhoUR/WhoUR";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocale } from "next-intl";
@@ -38,6 +39,8 @@ const HomePage = () => {
           <Features />
           <WhoUR />
           <DownApp />
+          {/* <AllCategory /> */}
+          <Testimonial />
         </motion.div>
       </AnimatePresence>
     </>
