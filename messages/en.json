@@ -30,6 +30,12 @@
       "title": " Frequently Asked Questions"
     }
   },
+  "about":{
+    "head":{
+      "title":"About us",
+      "description":"Discover who we are and what drives us. Our team is passionate about delivering exceptional service and innovative solutions tailored to your needs."
+    }
+  },
 
   "footer": {
     "col1": {
