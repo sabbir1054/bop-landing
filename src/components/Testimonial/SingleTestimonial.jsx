@@ -1,14 +1,6 @@
 import { useLocale } from "next-intl";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
-const items = [
-  {
-    image: "/assets/man.png",
-    name: " Micheal Gough",
-    designation: " CEO at Google",
-    comment:
-      "Flowbite is just awesome. It contains tons of pre designed components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-  },
-];
+
 const SingleTestimonial = ({ data }) => {
   const locale = useLocale();
   return (

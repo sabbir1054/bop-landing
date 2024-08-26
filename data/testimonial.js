@@ -1,6 +1,6 @@
 export const usersEn = [
   {
-    image: "/assets/man.jpg",
+    image: "/assets/man.png",
     name: "Rafiq Ahmed",
     designation: "CEO at Apex Footwear",
     comment:

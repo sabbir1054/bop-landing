@@ -1,9 +1,9 @@
-const loading = () => {
+const LoadingApp = () => {
   return (
     <div className="min-h-screen">
-      <div className="flex justify-center items-center"> Loading</div>
+      <div className="flex justify-center items-center">Loading . . .</div>
     </div>
   );
 };
 
-export default loading;
+export default LoadingApp;
