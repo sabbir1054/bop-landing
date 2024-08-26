@@ -1,27 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
-const faqs = [
-  {
-    question: "How can I reset my password?",
-    answer:
-      'To reset your password, click on "Forgot Password" on the login page and follow the instructions.',
-  },
-  {
-    question: "How do I update my billing information?",
-    answer:
-      "To update your billing information, go to your account settings and select the billing section.",
-  },
-  {
-    question: "How can I contact customer support?",
-    answer:
-      "You can contact customer support via the help section or by emailing support@example.com.",
-  },
-  {
-    question: "How do I delete my account?",
-    answer:
-      "To delete your account, please contact our support team. They will guide you through the process.",
-  },
-];
+import { useEffect, useState } from "react";
+import { faqDataBn, faqDataEn } from "../../../data/faqData";
+
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -77,12 +57,23 @@ const FAQItem = ({ question, answer }) => {
 const FAQSection = () => {
   const locale = useLocale();
   const t = useTranslations("home.faq");
+
+  const [data, setData] = useState(locale === "bn" ? faqDataBn : faqDataEn);
+  useEffect(() => {
+    if (locale === "bn") {
+      setData(faqDataBn);
+    } else {
+      setData(faqDataEn);
+    }
+  }, [locale]);
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2
-            className={`text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem] ${locale==="bn"&&"bn-font"}`}
+            className={`text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem] ${
+              locale === "bn" && "bn-font"
+            }`}
           >
             {t("title")}
           </h2>
