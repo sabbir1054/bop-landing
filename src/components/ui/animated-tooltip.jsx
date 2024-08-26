@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export const AnimatedTooltip = ({ item }) => {
   const locale = useLocale();
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(1);
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0); // going to set this value on mouse move
   // rotate the tooltip
