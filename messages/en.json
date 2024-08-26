@@ -25,6 +25,9 @@
     "testimonial": {
       "title": "Why BOPBD is the Best Choice?",
       "description": "Our customers' experiences are the driving force behind our success. With BOPBD, they've found top-quality products, reliable service, and an easy-to-use platform that enhances their business operations. "
+    },
+    "faq": {
+      "title": " Frequently Asked Questions"
     }
   },
 

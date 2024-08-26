@@ -1,5 +1,6 @@
 "use client";
 import { DownApp } from "@/components/DownApp/DownApp";
+import Faq from "@/components/FAQ/Faq";
 import Features from "@/components/Features/Features";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import WhoUR from "@/components/WhoUR/WhoUR";
@@ -39,8 +40,8 @@ const HomePage = () => {
           <Features />
           <WhoUR />
           <DownApp />
-          {/* <AllCategory /> */}
           <Testimonial />
+          <Faq />
         </motion.div>
       </AnimatePresence>
     </>

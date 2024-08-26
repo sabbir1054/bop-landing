@@ -35,7 +35,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="w-full lg:11/12 md:w-2/4 mx-auto">
+      <div className="w-full lg:w-2/4 md:w-3/4  mx-auto">
         <h2
           className={`text-center text-xl md:text-3xl font-semibold ${
             locale === "bn" && "bn-font"
