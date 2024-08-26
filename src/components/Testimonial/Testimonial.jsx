@@ -1,4 +1,5 @@
-import { useRef } from "react";
+"use client";
+import { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,7 +9,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
+import { useLocale } from "next-intl";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { userBn, usersEn } from "../../../data/testimonial";
 import SingleTestimonial from "./SingleTestimonial";
 
 const Testimonial = () => {
@@ -18,6 +21,16 @@ const Testimonial = () => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+
+  const locale = useLocale();
+  const [data, setData] = useState(locale === "bn" ? userBn : usersEn);
+  useEffect(() => {
+    if (locale === "bn") {
+      setData(userBn);
+    } else {
+      setData(usersEn);
+    }
+  }, [locale]);
 
   return (
     <div className="flex justify-center">
@@ -37,18 +50,11 @@ const Testimonial = () => {
           onAutoplayTimeLeft={onAutoplayTimeLeft}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <SingleTestimonial />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SingleTestimonial />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SingleTestimonial />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SingleTestimonial />
-          </SwiperSlide>
+          {data?.map((user, idx) => (
+            <SwiperSlide key={idx}>
+              <SingleTestimonial data={user} />
+            </SwiperSlide>
+          ))}
 
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
