@@ -1,5 +1,6 @@
 "use client";
 import LanguageSelector from "@/components/Hero/LanguageSelector";
+import { Perpose } from "@/components/Perpose/Perpose";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -47,7 +48,7 @@ const AboutPage = () => {
           <LanguageSelector />
         </motion.div>
       </div>
-
+      {/* about */}
       <div className="grid grid-cols-1 md:grid-cols-2  py-2">
         <div className="flex flex-col justify-center">
           <section className="py-8 px-4 bg-gray-100">
@@ -95,7 +96,7 @@ const AboutPage = () => {
             </div>
           </section>
         </div>
-        <div className="flex items-center justify-center bg-pink-100">
+        <div className="flex items-center justify-center bg-pink-100 pt-4 pb-4 md:pt-0 md:pb-0">
           <motion.div
             initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
             animate={{ opacity: 1, x: 0 }} // Slide in and fade in
@@ -110,6 +111,9 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Purpose  */}
+      <Perpose />
     </div>
   );
 };
