@@ -13,23 +13,23 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div
       className={`border border-solid border-gray-300 p-4 rounded-xl mb-8 lg:p-4 transition-all duration-500 ${
-        isOpen ? "bg-indigo-50 border-indigo-600" : ""
+        isOpen ? "bg-pink-50 border-pink-600" : ""
       }`}
     >
       <button
         onClick={toggleOpen}
-        className="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-indigo-600 focus:outline-none"
+        className="accordion-toggle group inline-flex items-center justify-between text-left text-lg font-normal leading-8 text-gray-900 w-full transition duration-500 hover:text-pink-600 focus:outline-none"
       >
         <h5
           className={`font-normal ${
-            isOpen ? "text-indigo-600 font-medium" : ""
+            isOpen ? "text-pink-600 font-medium" : ""
           } ${locale === "bn" && "bn-font"}`}
         >
           {question}
         </h5>
         <svg
           className={`w-6 h-6 transition-transform duration-500 ${
-            isOpen ? "rotate-180 text-indigo-600" : ""
+            isOpen ? "rotate-180 text-pink-600" : ""
           }`}
           fill="none"
           stroke="currentColor"

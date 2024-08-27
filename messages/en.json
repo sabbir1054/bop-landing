@@ -43,6 +43,13 @@
     }
   },
 
+  "contact":{
+    "head":{
+      "title":"Contact us",
+      "description":"Reach out to us today to explore how our solutions can empower your business. Whether you have questions, need support, or want to discuss opportunities, our team is here to help you succeed."
+    }
+  },
+
   "footer": {
     "col1": {
       "l1": "Company",
