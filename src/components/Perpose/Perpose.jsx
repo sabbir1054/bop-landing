@@ -33,9 +33,9 @@ export function Perpose() {
           </h2>
           <div className="text-neutral-200 mt-4 relative z-20 flex justify-center items-center">
             <ul className="list-none  mt-2">
-              {data?.map((item) => (
+              {data?.map((item ,idx) => (
                 <>
-                  <Step title={item} />
+                  <Step key={idx} title={item} />
                 </>
               ))}
             </ul>

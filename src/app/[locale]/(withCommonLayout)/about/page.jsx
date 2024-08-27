@@ -1,6 +1,7 @@
 "use client";
 import LanguageSelector from "@/components/Hero/LanguageSelector";
 import { Perpose } from "@/components/Perpose/Perpose";
+import Team from "@/components/Team/Team";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
@@ -114,6 +115,8 @@ const AboutPage = () => {
 
       {/* Purpose  */}
       <Perpose />
+      {/* Team  */}
+      <Team />
     </div>
   );
 };
