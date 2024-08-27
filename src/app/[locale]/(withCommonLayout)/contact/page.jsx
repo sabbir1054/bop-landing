@@ -1,4 +1,5 @@
 "use client";
+import ContactForm from "@/components/ContactForm/ContactForm";
 import LanguageSelector from "@/components/Hero/LanguageSelector";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
@@ -123,6 +124,9 @@ const ContactPage = () => {
             className="rounded-lg shadow-lg"
           ></iframe>
         </motion.div>
+      </div>
+      <div className="py-10">
+        <ContactForm />
       </div>
     </div>
   );
