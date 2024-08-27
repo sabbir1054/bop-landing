@@ -54,22 +54,42 @@ const ContactPage = () => {
           <section className=" px-4 about-sec2">
             <div className="container mx-auto max-w-4xl">
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
-                <ul className="text-lg">
-                  <li className="my-2">
-                    <strong>Address:</strong> Armania Street, Armanitola,
-                    Mirdford, Dhaka, Bangladesh.
+                <h2
+                  className={`text-2xl md:text-3xl font-semibold mb-4 ${
+                    locale === "bn" && "bn-font"
+                  }`}
+                >
+                  {t("sec1.title")}
+                </h2>
+                <ul className="text-lg py-5">
+                  <li className={`my-2 ${locale === "bn" && "bn-font"}`}>
+                    <strong className={`${locale === "bn" && "bn-font"}`}>
+                      {t("sec1.addName")}
+                    </strong>{" "}
+                    {t("sec1.addValue")}
                   </li>
-                  <li className="my-2">
-                    <strong>Phone:</strong> +321 123 4567
+                  <li className={`my-2 `}>
+                    <strong className={`${locale === "bn" && "bn-font"}`}>
+                      {t("sec1.phnName")}
+                    </strong>{" "}
+                    +880 1969669908
                   </li>
-                  <li className="my-2">
-                    <strong>Email:</strong> info@example.com
+                  <li className={`my-2 `}>
+                    <strong className={`${locale === "bn" && "bn-font"}`}>
+                      {t("sec1.emailName")}
+                    </strong>{" "}
+                    support@bopbd.com
                   </li>
                 </ul>
 
                 <div className="mt-6">
-                  <h3 className="text-2xl font-semibold mb-2">Get Social</h3>
+                  <h3
+                    className={`text-2xl md:text-3xl font-semibold mb-2 ${
+                      locale === "bn" && "bn-font"
+                    }`}
+                  >
+                    {t("sec1.socialName")}
+                  </h3>
                   <div className="flex space-x-4">
                     {/* Social Media Icons */}
                     <Link

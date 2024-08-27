@@ -6,12 +6,12 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 
 export const FloatingNav = ({ navItems, className }) => {
-  
+  const locale = useLocale();
   const t = useTranslations("navigation");
   const { scrollYProgress } = useScroll();
 
@@ -58,7 +58,13 @@ export const FloatingNav = ({ navItems, className }) => {
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span
+              className={`hidden sm:block text-sm ${
+                locale === "bn" && "bn-font"
+              }`}
+            >
+              {navItem.name}
+            </span>
           </Link>
         ))}
         <Link href={"/"}>

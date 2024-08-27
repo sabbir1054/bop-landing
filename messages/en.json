@@ -43,10 +43,34 @@
     }
   },
 
-  "contact":{
-    "head":{
-      "title":"Contact us",
-      "description":"Reach out to us today to explore how our solutions can empower your business. Whether you have questions, need support, or want to discuss opportunities, our team is here to help you succeed."
+  "contact": {
+    "head": {
+      "title": "Contact us",
+      "description": "Reach out to us today to explore how our solutions can empower your business. Whether you have questions, need support, or want to discuss opportunities, our team is here to help you succeed."
+    },
+    "sec1": {
+      "title": "Contact info",
+      "addName": "Address:",
+      "addValue": "Armania Street, Armanitola, Mirdford, Dhaka, Bangladesh.",
+      "phnName": "Phone:",
+      "emailName": "Email:",
+      "socialName": "Get Social"
+    },
+    "sec2": {
+      "title": "Still need help?",
+      "description": "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.",
+      "email": "Your email",
+      "reqSms": "Email is required",
+      "inValidSms": "Invalid email address",
+      "emailSub": "Subject",
+      "emailPlace": "Let us know how we can help you",
+      "messageName": "Message",
+      "reqErrMssage": "Message is required",
+      "messagePlace": "Your message",
+      "succcess": "Email sent successfully!",
+      "err": " Error sending email. Please try again later.",
+      "sendBtn": "Send",
+      "sendingBtn": "Sending"
     }
   },
 
