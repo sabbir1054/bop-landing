@@ -2,6 +2,8 @@
 import LanguageSelector from "@/components/Hero/LanguageSelector";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
 const ContactPage = () => {
   const locale = useLocale();
   const t = useTranslations("contact");
@@ -49,11 +51,63 @@ const ContactPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2  ">
         <div className="flex flex-col justify-center bg-gray-100">
           <section className=" px-4 about-sec2">
-            <div className="container mx-auto max-w-4xl"></div>
+            <div className="container mx-auto max-w-4xl">
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Contact Info</h2>
+                <ul className="text-lg">
+                  <li className="my-2">
+                    <strong>Address:</strong> Armania Street, Armanitola,
+                    Mirdford, Dhaka, Bangladesh.
+                  </li>
+                  <li className="my-2">
+                    <strong>Phone:</strong> +321 123 4567
+                  </li>
+                  <li className="my-2">
+                    <strong>Email:</strong> info@example.com
+                  </li>
+                </ul>
+
+                <div className="mt-6">
+                  <h3 className="text-2xl font-semibold mb-2">Get Social</h3>
+                  <div className="flex space-x-4">
+                    {/* Social Media Icons */}
+                    <Link
+                      href="https://www.facebook.com/bopbd.com.bd?mibextid=ZbWKwL"
+                      target="blank"
+                    >
+                      <Image
+                        src="/assets/facebook.svg"
+                        alt="Facebook"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                    <Link href="#">
+                      <Image
+                        src="/assets/twitter.svg"
+                        alt="Twitter"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+
+                    <Link href="https://youtube.com/@bopbd5294?feature">
+                      <Image
+                        src="/assets/youtube.svg"
+                        alt="YouTube"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
 
         <motion.div
+          className="min-h-screen md:min-h-full"
           initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
           animate={{ opacity: 1, x: 0 }} // Slide in and fade in
           transition={{ duration: 0.5, ease: "easeOut" }} // Smooth transition
@@ -61,7 +115,7 @@ const ContactPage = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.983005313934!2d90.39755038601828!3d23.712300923766865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b90035d679ef%3A0x8abb3993db412deb!2sHADI%20TEX%20CHEM!5e0!3m2!1sen!2sbd!4v1724729218978!5m2!1sen!2sbd"
             width="100%"
-            height="400"
+            height="100%"
             frameBorder="0"
             allowFullScreen=""
             aria-hidden="false"
