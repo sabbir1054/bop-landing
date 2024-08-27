@@ -71,7 +71,7 @@
       "messageName": "Message",
       "reqErrMssage": "Message is required",
       "messagePlace": "Your message",
-      "succcess": "Email sent successfully!",
+      "success": "Email sent successfully!",
       "err": " Error sending email. Please try again later.",
       "sendBtn": "Send",
       "sendingBtn": "Sending"

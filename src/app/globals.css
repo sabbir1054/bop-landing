@@ -101,3 +101,10 @@ h6 {
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
+
+.nav-show {
+  display: block;
+}
+.nav-hide {
+  display: none;
+}
