@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className=" text-gray-400 font-medium">
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`/${locale}/about`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l2")}
@@ -28,7 +28,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`/${locale}/contact`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l3")}
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`/${locale}/home`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col1.l4")}
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="text-gray-400 font-medium">
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href="https://x.com/BOPBD168336?t=BCDxImAXqt1ql8N34ov3Sw&s=09"
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l2")}
@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/bopbd.com.bd?mibextid=ZbWKwL"
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l3")}
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`/${locale}/contact`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col2.l4")}
@@ -90,7 +90,7 @@ export default function Footer() {
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`https://www.termsfeed.com/live/a2031d6d-2528-48b6-9bd5-3aa6a6a40e61`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l2")}
@@ -98,7 +98,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`https://www.termsfeed.com/live/a2031d6d-2528-48b6-9bd5-3aa6a6a40e61`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l3")}
@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li className="mb-4">
                 <Link
-                  href="#"
+                  href={`https://www.termsfeed.com/live/a2031d6d-2528-48b6-9bd5-3aa6a6a40e61`}
                   className={`hover:underline ${locale === "bn" && "bn-font"}`}
                 >
                   {t("col3.l4")}
