@@ -1,9 +1,9 @@
 "use client";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 import { FloatingNav } from "../ui/floating-navbar";
-import { motion } from "framer-motion";
 export function NavigationBar() {
   const [isNavVisible, setNavVisible] = useState(false);
   const locale = useLocale();
@@ -33,7 +33,6 @@ export function NavigationBar() {
       <div className="fixed top-0 left-0 p-4 md:hidden z-40">
         <motion.div
           className="border-2 border-transparent rounded-full overflow-hidden bg-black bg-opacity-50 px-3 py-2 cursor-pointer"
-        
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
@@ -50,9 +49,9 @@ export function NavigationBar() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-x"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -67,9 +66,9 @@ export function NavigationBar() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />

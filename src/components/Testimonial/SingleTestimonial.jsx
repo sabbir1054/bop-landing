@@ -20,7 +20,7 @@ const SingleTestimonial = ({ data }) => {
           </svg>
           <blockquote>
             <p
-              class={`text-2xl font-medium text-gray-900  ${
+              class={`text-xl md-text-2xl font-medium text-gray-900  ${
                 locale === "bn" && "bn-font"
               }`}
             >

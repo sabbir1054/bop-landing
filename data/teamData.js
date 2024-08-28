@@ -8,7 +8,9 @@ export const teamMembersEn = [
   },
   {
     name: "Dr. Talukdar Hannan",
-    role: "",
+    role: "Director",
+    details:
+      "Visionary leader driving growth and innovation in B2B e-commerce.",
     imgSrc: "/assets/team/talukdarhannan.jpeg",
   },
 ];
@@ -22,7 +24,9 @@ export const teamMembersBn = [
   },
   {
     name: "ডক্টর  তালুকদার হান্নান",
-    role: "",
+    role: "ডিরেক্টর",
+    details:
+      "বাণিজ্যিক ই-কমার্স সাইটের ক্ষেত্রে, বৃদ্ধির এবং উদ্ভাবনের পথপ্রদর্শক।",
     imgSrc: "/assets/team/talukdarhannan.jpeg",
   },
 ];
