@@ -4,14 +4,14 @@ export const usersEn = [
     name: "Rafiq Ahmed",
     designation: "CEO at Apex Footwear",
     comment:
-      "BOPBD has streamlined our procurement process like never before. The platform is intuitive and has everything we need for efficient B2B transactions.",
+      "BOP BD has streamlined our procurement process like never before. The platform is intuitive and has everything we need for efficient B2B transactions.",
   },
   {
     image: "/assets/user/woman.jpg",
     name: "Farzana Haque",
     designation: "CTO at PRAN-RFL Group",
     comment:
-      "BOPBD has become our go-to platform for sourcing quality products. The user experience is smooth, and the product variety is extensive.",
+      "BOP BD has become our go-to platform for sourcing quality products. The user experience is smooth, and the product variety is extensive.",
   },
   {
     image: "/assets/user/man2.jpg",
@@ -25,42 +25,42 @@ export const usersEn = [
     name: "Nusrat Jahan",
     designation: "Head of Operations at BRAC Dairy",
     comment:
-      "BOPBD offers a comprehensive range of products that meet our business needs. The platform is easy to navigate and highly efficient.",
+      "BOP BD offers a comprehensive range of products that meet our business needs. The platform is easy to navigate and highly efficient.",
   },
   {
     image: "/assets/user/man3.jpg",
     name: "Mahmudul Islam",
     designation: "Director at Walton Group",
     comment:
-      "Using BOPBD has been a game-changer for our supply chain management. The platform's features and product availability are impressive.",
+      "Using BOP BD has been a game-changer for our supply chain management. The platform's features and product availability are impressive.",
   },
   {
     image: "/assets/user/woman3.jpg",
     name: "Shirin Akter",
     designation: "Procurement Lead at ACI Limited",
     comment:
-      "BOPBD has significantly improved our procurement efficiency. The platform's intuitive design and excellent customer service make it indispensable for our operations.",
+      "BOP BD has significantly improved our procurement efficiency. The platform's intuitive design and excellent customer service make it indispensable for our operations.",
   },
   {
     image: "/assets/user/man4.jpg",
     name: "Zahid Hasan",
     designation: "Sales Manager at DBL Group",
     comment:
-      "BOPBD's reliability and extensive product selection have made it our preferred platform for B2B purchases. It's an essential tool for any business.",
+      "BOP BD's reliability and extensive product selection have made it our preferred platform for B2B purchases. It's an essential tool for any business.",
   },
   {
     image: "/assets/user/woman4.jpg",
     name: "Rumana Islam",
     designation: "Marketing Manager at Square Pharmaceuticals",
     comment:
-      "BOPBD provides a seamless shopping experience. The platform's ease of use and wide range of products are exactly what we need for our business.",
+      "BOP BD provides a seamless shopping experience. The platform's ease of use and wide range of products are exactly what we need for our business.",
   },
   {
     image: "/assets/user/man5.jpg",
     name: "Kamrul Islam",
     designation: "Supply Chain Officer at Meghna Group",
     comment:
-      "BOPBD has simplified our procurement process. The platform's efficiency and product variety make it a critical asset for our business.",
+      "BOP BD has simplified our procurement process. The platform's efficiency and product variety make it a critical asset for our business.",
   },
   {
     image: "/assets/user/woman5.jpg",
