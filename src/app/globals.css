@@ -37,7 +37,6 @@ h6 {
   margin-bottom: 10rem !important;
 }
 
-
 .autoplay-progress {
   position: absolute;
   right: 16px;
@@ -97,4 +96,11 @@ h6 {
 }
 .nav-hide {
   display: none;
+}
+
+.custom-swal-popup {
+  width: 400px !important;
+  height: 300px !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
