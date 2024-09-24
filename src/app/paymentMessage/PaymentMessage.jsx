@@ -4,20 +4,19 @@ import { redirect, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
-const backendUrl = process.env.NEXT_BKASH_URL;
+const bkashbackendUrl = process.env.NEXT_PUBLIC_BKASH_URL;
 
 const PaymentMessage = () => {
   const searchParams = useSearchParams();
   const [isSuccess, setIsSuccess] = useState(null);
   const [isFetched, setIsFetched] = useState(false);
-
   const paymentID = searchParams.get("paymentID");
 
   useEffect(() => {
     let isMounted = true; // Flag to track whether the component is mounted
 
     if (!isFetched && paymentID) {
-      fetch("http://localhost:5002/api/v1/commissionPay/executePayment", {
+      fetch(`${bkashbackendUrl}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
